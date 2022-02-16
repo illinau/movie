@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Inter";
+    src: local("Inter");
+}
+
+.movie-block {
+    position: relative;
+    flex-shrink: 0;
+    margin: 5px;
+    padding: 5px 5px 5px 10px;
+    min-height: 220px;
+    width: 360px;
+    box-shadow: 0 3px 6px 0 #aaa;
+}
+
+.ant-tag {
+    margin-top: 6px;
+}
+
+.movie-block .col-1 {
+    display: flex;
+}
+
+.description-img-wrapper {
+    width: 60px;
+}
+
+.description-img-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-info-wrapper {
+    padding-left: 10px;
+    padding-right: 35px;
+}
+
+.title {
+    font-family: 'Inter', serif;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.date {
+    margin: 5px 0 0 0;
+    font-family: 'Inter', serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: #827e7e;
+}
+
+.vote {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #0f0;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.movie-block .col-2 {
+    min-height: 100px;
+}
+
+.text {
+    font-family: 'Inter', serif;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 7px 20px 49px 0;
+}
+
+.movie-block .col-3 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.movie-poster__img-wrapper {
+    display: none;
+}
+
+.vote-higher-7 {
+    border-color: #66e900;
+}
+
+.vote-higher-5 {
+    border-color: #e9d100;
+}
+
+.vote-higher-3 {
+    border-color: #e97e00;
+}
+
+.vote-lower-3 {
+    border-color: #e90000;
+}
+
+.star-filled {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .movie-block {
+        margin: 15px;
+        padding: 0;
+        display: flex;
+        width: 440px;
+    }
+
+    .movie-block .col-3 {
+        justify-content: flex-start;
+    }
+
+    .description-img-wrapper {
+        display: none;
+    }
+
+    .main-info-wrapper {
+        padding-left: 0;
+        height: auto;
+    }
+
+    .movie-description {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 5px 5px 15px;
+    }
+
+    .movie-poster__img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        min-height: 300px;
+    }
+
+    .movie-poster img {
+        max-width: 100%;
+        height: auto;
+    }
+}
